@@ -5,14 +5,14 @@ import model.Flag;
 
 public class FlagThread extends Thread{
 
-	private Flag flag;
+	private Flag fl;
 	
-	public FlagThread(int color, int sleep,int position,int large) {
-		flag= new Flag(color,sleep,position,large);
+	public FlagThread(int color, int slumber,int place,int la) {
+		fl= new Flag(color,slumber,place,la);
 	}
 	public void run() {
 		try {
-			flag.initialize();
+			fl.init();
 		} catch (IOException e) {
 	
 			e.printStackTrace();
